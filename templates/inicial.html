@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>wingergo</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        .divlink {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .titulo {
+            color: black;
+            text-align: center;
+        }
+        .botão{
+            width: 80%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            font-size: xx-small;
+        }
+
+
+        input[type="text"],
+        input[type="password"],
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        center{
+            font-size: xx-small;
+        color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>wingergo</h1>
+    </header>
+    <div class="divlink">
+        <h1 class="titulo">Olá usuário</h1>                      
+        <p>Para continuar, é necessário fazer login com seu e-mail e senha.</p>
+        <p>E-mail</p>
+        <input type="text">
+        <p>Senha</p>
+        <input type="password" id="senhaInput">
+        <button onclick="mostrarSenha()">Mostrar Senha</button>
+        <p>Deseja continuar como anônimo? Clique no botão abaixo ou adicione ao link /anonimo </p>
+        <script>
+            function irParaOutraPagina() {
+                window.location.href = "/anonimo";
+            }
+        </script>
+        <input type="button" value="Ir para pagina anõnima" onclick="irParaOutraPagina()">
+    </div>
+    <script>
+        function mostrarSenha() {
+            var senhaInput = document.getElementById("senhaInput");
+            if (senhaInput.type === "password") {
+                senhaInput.type = "text";
+            } else {
+                senhaInput.type = "password";
+            }
+        }
+    </script>
+    <p><center>este é apenas um site de teste então igonore erros e coisas faltando</center></p>
+   
+</body>
+</html>                    
