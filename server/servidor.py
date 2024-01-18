@@ -13,16 +13,10 @@ def homepage():
 def anonimo():
     return render_template("pagina.html")
 
-
-
-
 @app.route("/calculadora")
 def calculadora():
     return render_template("calculator.html")
 
 
-
-
-   
 if __name__ == "__main__":
     app.run(debug=True)
