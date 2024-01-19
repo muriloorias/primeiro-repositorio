@@ -66,7 +66,14 @@
             color: darkgray;
             text-align: center;
         }
+        h1,
+        h4,
+        h3{
+            color: black;
+            
+        }
     </style>
+    <noscript>para acessar este site é necessario ativar javascript no seu navegador</noscript>
 </head>
 <body>
     <h1>Barra de Pesquisa</h1>
@@ -77,9 +84,9 @@
     <div id="searchResults"></div>
     <h1>noticias</h1>
     <div><center>
-        <h1>titulo</h1>
-        <p>paragrafo do titulo</p>
-        <h3>texto</h3>
+        <h1>olá usuario</h1>
+        <h4>este é apenas um site iniciante </h4>
+        <h3>e não está em seu cem porcento então espere bugs e coisas faltando</h3>
     </center>
     </div>
     <hr>
@@ -87,10 +94,12 @@
     <input type="text" placeholder="é necessario fazer login prara postar">
     <script>
         function irParaOutraPagina() {
-            window.location.href = "/";
+            var urlAtual = window.location.href;
+            var novaUrl = urlAtual.replace("/anonimo", "");
+            window.location.href = novaUrl;
         }
     </script>
-    <input type="button" onclick="irParaOutraPagina" value="fazer login">
+    <input type="button" onclick="irParaOutraPagina()" value="fazer login">
     <p>não há postagens ainda</p>
     <hr>
     <h1>novidades musicais</h1>
