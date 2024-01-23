@@ -72,6 +72,18 @@
             color: black;  
              
         }
+        ::selection{
+            color: rgb(10, 10, 15);
+            background-color: rgb(100, 100, 255);
+        }
+        .moldura{
+            border: 5px solid #333;
+            border-radius: 8px;
+        }
+        .bordadetexto{
+            border: 5px solid rgb(20, 10, 15);
+            border-radius: 8px;
+        }
     </style>
     <noscript>para acessar este site é necessario ativar javascript no seu navegador</noscript>
 </head>
@@ -83,7 +95,7 @@
     </form>
     <div id="searchResults"></div>
     <h1>noticias</h1>
-    <div><center>
+    <div><center class="bordadetexto">
         <h1>olá usuario</h1>
         <h4>este é apenas um site iniciante </h4>
         <h3>e não está em seu cem porcento então espere bugs e coisas faltando</h3>
@@ -105,7 +117,7 @@
     <h1>novidades musicais</h1>
     <h1><center>Justin Timberlake anuncia show gratuito em Memphis e nova música a caminho</center></h1>
     <center>
-        <img src="https://img.band.uol.com.br/image/2024/01/15/apresentacao-sera-apenas-para-um-publico-de-pouco-mais-de-2-mil-pessoas-134839_800x450.webp">
+        <img src="https://img.band.uol.com.br/image/2024/01/15/apresentacao-sera-apenas-para-um-publico-de-pouco-mais-de-2-mil-pessoas-134839_800x450.webp" class="moldura">
     </center>
    
     <button onclick="redirecionarParaNoticia()">veja</button>
