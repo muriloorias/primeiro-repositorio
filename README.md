@@ -1,3 +1,1 @@
-olá este é meu primeiro site e repositorio no github 
-espere alguns erros e se for possivel reeporte esse erros para mim por aqui mesmo ou pelo meu e-mail mu.a.o@outlook.com
-faça bom uso do codigo e boa sorte!
+Oi! Este é o meu primeiro site e repositório no GitHub. Aguarde alguns erros, e, se possível, reporte esses erros por aqui. Fique à vontade para usar o código e boa sorte!
